@@ -1,0 +1,385 @@
+.commontc {
+
+    padding: 0 30px 0 40px;
+    
+}
+
+.board {  
+    padding: 40px;
+}
+
+.boardtopleft,.boardtopright{
+    float: left;
+}
+
+.boardtopleft {
+    width: 158px;
+    height: 158px;
+    padding: 3px;
+    position: relative;
+    border: 1px solid #ccc;
+}
+
+.boardtopleft img{
+    display: block;
+    width: 150px;
+    height: 150px;
+}
+
+.boardtopleft .mask{
+    float: left;
+    display: block;
+    width: 158px;
+    height: 158px;
+    top: -4px;
+    left: -4px;
+    position: absolute;
+    background: url(https://s2.music.126.net/style/web2/img/coverall.png?f1141ef60f1cbd02a4063d703c1235f4) no-repeat;
+    background-position: -230px -380px;
+  
+}
+
+.boardtopright {
+    width: 470px;
+    margin-left: 29px;
+    margin-top: 16px;
+}
+
+.boardtopright .title{
+    margin-bottom: 20px;
+}
+.boardtopright .update{
+    margin-bottom: 25px;
+    margin-right: -10px;
+}
+.btngroup .recode,
+.btngroup .share,
+.btngroup .down,
+.btngroup .recommo ,
+.btngroup .icon{
+    background: url(https://s2.music.126.net/style/web2/img/button2.png?0eb80086f1c7c9c85aa8f1b2565ca3ac);
+}
+
+.btngroup {
+    line-height: 31px;
+    color: #333;
+}
+
+.btngroup span {
+    cursor: pointer;
+    float: left;
+}
+
+.btngroup span i {
+    font-style: normal;
+    font-size: 12px;
+}
+
+.btngroup .recode,
+.btngroup .share,
+.btngroup .down,
+.btngroup .recommo {
+    display: block;
+    float: left;
+    height: 31px;
+    margin-right: 6px;
+    padding-right: 5px;
+    border-radius: 4px;
+    font-size: 12px;
+    background-position: right -1020px;
+}
+
+.btngroup .playlist {
+    float: left;
+    height: 31px;
+    background-color: #2273C2;
+    font-size: 12px;
+    color: white;
+    border-radius: 4px 0 0 4px;
+    padding: 0 5px 0 0;
+    background-color: #3987D2;
+}
+
+.btngroup .playlist:hover {
+    background-color: #539EE4;
+}
+
+.playlist .iconcontainer {
+    padding: 0 7px 0 8px;
+    font-style: normal;
+    display: block;
+}
+
+.playlist .iconcontainer .playbtn {
+    display: block;
+    width: 20px;
+    height: 18px;
+    float: left;
+    background-position: 0 -1622px;
+    margin: 6px 2px 2px 0;
+}
+
+.btngroup .playadd {
+    width: 31px;
+    display: block;
+    height: 31px;
+    background-position: 0 -1588px;
+    margin-right: 5px;
+}
+
+.btngroup .playadd:hover {
+    background-position: -40px -1588px;
+}
+
+.btngroup .recodeicon,
+.btngroup .shareicon,
+.btngroup .downicon,
+.btngroup .recommoicon {
+    float: left;
+    display: block;
+    padding: 0 2px 0 28px;
+}
+
+.btngroup .recodeicon {
+    background-position: 0 -977px;
+}
+
+.btngroup .shareicon {
+    background-position: 0 -1225px;
+}
+
+.btngroup .downicon {
+    background-position: 0 -2761px;
+}
+
+.btngroup .recommoicon {
+    background-position: 0 -1465px;
+}
+
+
+.boarddetail{
+    margin: 0 29px 40px 40px;  
+}
+.boardlistbar {
+    padding-bottom: 5px;
+    border-bottom: 2px solid #c20c0c;
+}
+
+.boardlistbar .tablist{
+    float: left;
+}
+
+.boardlistbar .title{
+    font-size: 20px;
+    line-height: 28px;
+}
+
+.boardlistbar .number{
+    margin: 9px 2px 0 20px;
+}
+
+.boardlistbar .count {
+    float: right;
+}
+
+.songlist{
+    border: 1px solid #ccc;
+    border-bottom: none;
+}
+
+.count .red{
+    color: red;
+}
+
+.tab {
+    height: 34px;
+    line-height: 34px;
+    background-color: #F6F6F6;
+    border-bottom:2px solid #DBDBDB;
+}
+
+.tab .indector,
+.tab .title,
+.tab .duration,
+.tab .singer {
+    border-right:1px solid #DBDBDB; 
+}
+
+.listdetail {
+    height: 30px;
+    line-height: 30px;
+}
+
+.newheight {
+    height: 70px;
+    line-height: 70px;
+}
+
+.clear {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+.ullist .title,
+.ullist .duration,
+.ullist .singer   {
+    padding-left:10px;
+    padding-right:10px; 
+}
+
+.ullist li,
+.ullist div {
+    float: left;
+}
+
+.ullist .indector {
+    width: 78px;
+    height: 100%;
+}
+
+.ullist .title {
+    width: 407px;
+}
+
+.ullist .duration {
+    width: 91px;
+}
+
+.ullist .singer {
+    width: 93px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow:ellipsis;
+}
+
+.title .canshow img,
+.title .canshow a {
+    float: left;
+}
+
+.title .canshow {
+    margin-top: 10px;
+}
+.indector .index {
+    width: 25px;
+    margin-left: 15px;
+}
+
+.indector .srotnew
+{
+    width: 32px;
+}
+
+
+
+.titlesup .play {
+    float: left;
+    width: 17px;
+    height: 17px;
+    margin: 8px 8px 0 0px;
+    background: url(https://s2.music.126.net/style/web2/img/table.png?d83ae4f37c13487886223beb2a867cfd) no-repeat 0 9999px;
+    background-position: 0 -103px;
+    cursor: pointer;
+}
+
+.titlesup .newplay {
+    margin: 28px 8px 0 14px;
+}
+
+.titlesup .play:hover {
+    background-position: 0 -128px;
+}
+
+.titlesup .name{
+    display: inline-block;
+    width: 298px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    color:#333;
+   
+}
+
+.duration .btns {
+    display: none;
+}
+
+.listdetail:hover .duration {
+    padding-right: 0;
+}
+
+.listdetail:hover .btns {
+    display: inline;
+}
+
+.listdetail:hover .times {
+    display: none;
+}
+
+.btns {
+    margin-top: 10px;
+    font-size: 0;
+}
+
+
+.btns .addplay ,
+.btns .record,
+.btns .share,
+.btns .down {
+    display: inline-block;
+    width: 18px;
+    height: 16px;
+    margin-left: 1px;
+    background: url(https://s2.music.126.net/style/web2/img/table.png?d83ae4f37c13487886223beb2a867cfd);
+   
+}
+
+.btns .addplay {
+    background: url(https://s2.music.126.net/style/web2/img/icon.png?cfc4e8274ecd9dc9068e9888a721097a);
+    background-position: 3px -700px;
+}
+
+.btns .record {
+    background-position: 0 -174px;
+}
+
+.btns .share {
+    background-position: 0 -195px;
+}
+
+.btns .down {
+    background-position: -79px -174px;
+}
+
+.btns .addplay:hover {
+    background-position: -19px -700px;
+}
+
+.btns .record:hover {
+    background-position: -20px -174px;
+}
+
+.btns .share:hover {
+    background-position: -20px -195px;
+}
+
+.btns .down:hover {
+    background-position: -102px -174px
+}
+
+
+.wrap{
+    background-color: #ced7d845 
+}
+
+
+
+
+
+
+
+
+
+
+

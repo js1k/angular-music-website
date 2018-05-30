@@ -1,0 +1,86 @@
+<div class="containerdiv">
+  <div class="song clear">
+
+    <div class="songleft">
+
+      <div class="covleft">
+        <img class="limg" [src]=' searchMusic?.pictureUl + "?param=130y130" ' />
+        <span class="mask">
+        </span>
+      </div>
+
+      <div class="outlink">
+        <i class="music"></i>
+        <a href="#" class="desc">生成外链播放器</a>
+      </div>
+    </div>
+
+    <div class="songright">
+
+      <div class="title">
+        <i class="ticon"></i>
+        <span class="tdetail">
+          {{ searchMusic?.song}}
+        </span>
+      </div>
+
+      <div class="sup">{{ searchMusic?.songsup}}</div>
+
+      <p class="pdiv">
+        <span class="label">
+          歌手:
+        </span>
+        <a href="#">
+          {{searchMusic?.singer}}
+        </a>
+      </p>
+
+      <p class="pdiv">
+        <span class="label">
+          所属专辑：
+        </span>
+        <a href="#">
+          {{searchMusic?.alName}}
+        </a>
+      </p>
+
+
+      <div class="btngroup clear">
+        <span href="#" class="playlist floatx" (click)="playing(searchMusic?.songId)">
+          <i class="iconcontainer">
+            <span class="playbtn icon"></span> 播放
+          </i>
+        </span>
+        <span href="#" class="playadd floatx icon"></span>
+        <span class="recode">
+          <i class="recodeicon icon">分享</i>
+        </span>
+        <span class="share">
+          <i class="shareicon icon">收藏</i>
+        </span>
+        <span class="down">
+          <i class="downicon icon">下载</i>
+        </span>
+        <span class="recommo">
+          <i class="recommoicon icon">(1xxx)</i>
+        </span>
+      </div>
+
+      <div class="srccontainer">
+        <div [innerHTML]="safeStr1" class="one"></div>
+        <div *ngIf="isShow" [innerHTML]="safeStr2" class="two"></div>
+
+        <span (click)="showing()" class="showmore">展开
+          <i class="indector"></i>
+
+        </span>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="commontc">
+    <app-common [type]=" 'R_SO_4_' " ></app-common>
+  </div>
+
+</div>

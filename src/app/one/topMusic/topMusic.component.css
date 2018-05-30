@@ -1,0 +1,144 @@
+.top-conter {
+    width: 686px; 
+}
+
+
+.lulsup,.lulsup li{
+    float: left;
+}
+
+.lulsup li a {
+    text-decoration: none;
+    font-size: 12xp;
+    color: #666;
+}
+.lulsup  li a:hover {
+    text-decoration: underline;
+}
+
+.lulsup li .space {
+    margin: 0 10px;
+}
+.titlet{
+    font-size: 20px;
+    display: inline-block;
+}
+
+.topmusiccontainer {
+    display: inline-block;
+    vertical-align: top;
+    margin: 7px 0 7px 20px;
+}
+
+.rightt {
+    display: inline-block;
+    position: absolute;
+    right: 3px;
+    line-height: 33px;
+    
+}
+.rightt a {
+    color: rgba(0, 0, 0, 0.65);
+}
+
+
+
+.cover {
+    position: relative;
+    width: 140px;
+    height: 140px;
+}
+
+.cover .cover-link {
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: inline-block;
+    width: 140px;
+    height: 140px;
+}
+
+.cover-bot {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 140px;
+    height: 27px;
+    background: url(https://s2.music.126.net/style/web2/img/coverall.png?c246f26080cbc5f4ceb6a6dc0a9c63c6) no-repeat;
+    background-position: 0 -537px;
+    ;
+}
+
+.cover-bot .sup ,.cover-bot .play{
+    background: url(https://s2.music.126.net/style/web2/img/iconall.png?9c637b5107f4ee070505b6933813722d);
+}
+
+.cover-bot .sup {
+    float: left;
+    width: 14px;
+    height: 11px;
+    margin: 9px 5px 9px 10px;
+    background-position: 0 -24px;
+}
+
+.cover-bot .count {
+    float: left;
+    margin: 7px 0 0 0;
+    color: #ccc;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 16px;
+    font-size: 12px;
+}
+
+.cover-bot .play {
+    position: absolute;
+    display: inline-block;
+    right: 10px;
+    bottom: 4px;
+    width: 16px;
+    height: 17px;
+    background-position: 0 0;  
+}
+
+.cover-bot .play:hover {
+    background-position: 0 -60px;
+}
+
+.dataList {
+    width: 686px;
+    margin: 0 auto;   
+}
+
+.dataList ul {  
+    margin: 20px 0 0 -42px;
+    overflow: hidden;  
+}
+
+.dataList li {
+    float: left;
+    list-style-type: none;
+    margin: 0 0px 30px 42px;
+   
+}
+
+.dataList p {
+    margin: 8px 0 3px 0 ;
+}
+
+.dataList p a {
+   
+    font-size: 14px;
+    display: block;
+    color: black;
+    text-decoration: none;
+ 
+}
+
+.hideslip {
+    width: 140px;
+    height: 53px;
+    overflow: hidden;
+    /* white-space: nowrap; */
+    text-overflow:ellipsis;
+    word-wrap: break-word;
+}

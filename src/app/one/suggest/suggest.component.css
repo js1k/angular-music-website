@@ -1,0 +1,171 @@
+.top-conter {
+    width: 686px; 
+}
+
+
+.cover-bot .sup ,.cover-bot .play{
+    background: url(https://s2.music.126.net/style/web2/img/iconall.png?9c637b5107f4ee070505b6933813722d);
+}
+
+.cover-bot{
+    background: url(https://s2.music.126.net/style/web2/img/coverall.png?fcbb4bb2c41e1df0b73a0051e75c502f) no-repeat 0 9999px;
+}
+.topBar {
+    height: 33px;
+    padding: 0 10px 0 34px;
+   
+    background-position: -225px -156px;
+    border-bottom: 2px solid #C10D0C;
+    position: relative;
+    
+}
+
+.titlet{
+    font-size: 20px;
+    display: inline-block;
+}
+
+.rightt {
+    display: inline-block;
+    position: absolute;
+    right: 3px;
+    line-height: 33px;
+    
+}
+.rightt a {
+    color: rgba(0, 0, 0, 0.65);
+}
+
+.cover {
+    position: relative;
+    width: 140px;
+    height: 140px;
+}
+
+.cover .cover-link {
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: inline-block;
+    width: 140px;
+    height: 140px;
+}
+
+.cover-bot {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 140px;
+    height: 27px;
+    background-position: 0 -537px;
+    ;
+}
+
+.cover-bot .sup {
+    float: left;
+    width: 14px;
+    height: 11px;
+    margin: 9px 5px 9px 10px;   
+    background-position: 0 -24px;
+}
+
+.cover-bot .count {
+    float: left;
+    margin: 7px 0 0 0;
+    color: #ccc;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 16px;
+    font-size: 12px;
+}
+
+.cover-bot .play {
+    position: absolute;
+    display: inline-block;
+    right: 10px;
+    bottom: 4px;
+    width: 16px;
+    height: 17px;
+    background-position: 0 0;  
+}
+
+.cover-bot .play:hover {
+    background-position: 0 -60px;
+}
+
+.dataList {
+    width: 686px;
+    margin: 0 auto;   
+}
+
+.dataList ul {  
+    margin: 20px 0 0 -42px;
+    overflow: hidden;  
+}
+
+.dataList li {
+    float: left;
+    list-style-type: none;
+    margin: 0 0px 30px 42px;
+   
+}
+
+.dataList p {
+    margin: 8px 0 3px 0 ;
+}
+
+.dataList p a {
+    width: 140px;
+    font-size: 14px;
+    display: block;
+    word-wrap: break-word;
+    color: black;
+    text-decoration: none;
+}
+
+
+
+/* 每日推荐样式 */
+
+
+.oneSugget {
+    width: 140px;
+    height: 140px;
+}
+
+.oneSuggetTop .week ,.oneSuggetTop .day {
+    display: block;
+    text-align: center;
+    background: url(http://s2.music.126.net/style/web2/img/date.png?55a18a6b5e81dde6eff94369d5a7d046);
+}
+
+.oneSuggetTop .week {
+    height: 33px;
+    line-height: 33px;
+    border-radius: 8px 8px 0 0;
+    color:#d4caca;
+    background-color: #962626;
+    background-position: 0 0 ;
+}
+
+.oneSuggetTop .day {
+    height: 107px;
+    line-height: 107px;
+    font-size: 94px;		
+    background-position:0 -150px ;
+    color:#333;
+}
+
+.oneSugget .decs{
+    margin: 8px 0 3px 0;
+}
+.oneSugget .decs a {
+    color: #000000;
+    font-size: 14px;
+}
+
+.oneSugget .decsTitle {
+    line-height: 1.4;
+    font-size: 12px;
+    color: #999;
+    margin: 3px 0 0 0;
+}

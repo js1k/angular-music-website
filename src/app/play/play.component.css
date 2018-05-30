@@ -1,0 +1,293 @@
+
+a {
+    color: #e8e8e8;
+    text-decoration: none;
+    font-size: 12px;
+}
+   
+.prol{
+    margin: 30px;
+}
+
+.bottomplaycontiner{
+    width: 100%;
+    background-color: #252525;
+    position: fixed;
+    bottom: 0;
+    left: 0;			
+    margin: auto 0;
+}
+
+.playGroup {
+    
+    width: 980px;
+    height: 46px;
+    margin: 0 auto; 
+}
+
+
+.playBtns {
+    width: 137px;
+    height: 42px;
+    padding: 6px 0 0 6px;
+}
+
+.playBtns,
+.myPlayerPanel,
+.timeTitle,
+.progressContainer {
+    float: left;
+}
+
+.progress {
+    height: 8px;
+}
+
+.progressContainer {
+    width: 493px;
+    height: 8px;
+    background-color: #191919;
+    border-radius: 4px;
+    position: relative;
+}
+
+.progressContainer:hover {
+    cursor: pointer;
+}
+
+.progressLine {
+    width: 0px;
+    height: 9px;
+    background-color: #ff0000;
+    border-radius: 4px;
+}
+
+.targetBtn {
+    width: 18px;
+    height: 18px;
+    background: url(https://s2.music.126.net/style/web2/img/iconall.png?0ccf324ce9b9f2e425b60de686f84e55);
+    background-position: -2px -252px;
+    position: absolute;
+    top: -5px;
+    left: -9px;
+}
+
+.targetBtn:hover {
+    background-position: -2px -282px;
+}
+
+.timeTitle {
+    color: white;
+    font-size: 12px;
+    height: 14px;
+    line-height: 14px;
+    margin: -4px 0 0 20px;
+}
+
+.preBtn,
+.nextBtn,
+.playOrPauseBtn {
+    display: block;
+    float: left;
+    background: url(https://s2.music.126.net/style/web2/img/frame/playbar_8.png?6fc004770254f9a4cb302fbdca25d0b6);
+    text-indent: -9999px;
+}
+
+.playBtnplay {
+    
+    background-position: 0 -165px;
+}
+
+.playBtnPause {
+    background-position: 0 -204px;
+}
+
+.playBtnplay:hover {
+    background-position: -40px -165px;
+}
+
+.playBtnPause:hover {
+    background-position: -40px -204px;
+}
+
+
+.preBtn,
+.nextBtn {
+    width: 28px;
+    height: 28px;
+    margin: 4px 8px 0 0;
+}
+
+.playOrPauseBtn {
+    width: 36px;
+    height: 36px;
+    margin: 0 8px 0 0;
+}
+
+.preBtn {
+    background-position: 0 -130px;
+}
+
+.preBtn:hover {
+    background-position: -30px -130px;
+}
+
+
+
+
+
+.nextBtn {
+    background-position: -80px -130px;
+}
+
+.nextBtn:hover {
+    background-position: -110px -130px;
+}
+
+.nikeImg {
+    width: 36px;
+    height: 36px;
+    position: relative;
+    float: left;
+    margin: 6px 15px 0 0;
+}
+
+.nikeImg a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.singInfo {
+    float: left;
+    width: 608px;
+    height: 37px;
+    margin-left: 9px;
+}
+
+.singInfoname {
+    height: 28px;
+}
+
+.singInfoname .playsinger {
+    margin-left:15px; 
+    color: #9b9b9b;
+}
+
+.singInfoname .songlistlink {
+    margin-left:15px; 
+    display: inline-block;
+    width: 14px;
+    height: 15px;
+    background: url(https://s2.music.126.net/style/web2/img/frame/playbar_8.png?6fc004770254f9a4cb302fbdca25d0b6);
+    background-position: -110px -103px;
+    vertical-align: middle;
+}
+
+.singInfoname .songlistlink:hover {
+    background-position: -130px -103px;
+}
+
+.playsup {
+    padding: 11px 2px 0 0;
+    float: left;
+}
+
+.playsup a {
+    float: left;
+    height: 25px;
+    width: 25px;
+    background: url(https://s2.music.126.net/style/web2/img/frame/playbar.png?813c8c259b5779274233ce3a7d556040);
+}
+
+.playsup .suppplaylist {
+    width: 59px;
+}
+
+.suppplaylist .numTxt {
+    height: 25px;
+    line-height: 25px;
+    margin-left: 30px
+}
+
+
+
+/*//////////////////////////////////////*/
+.playsup .supadd {
+    background-position: -88px -163px;
+}
+
+.playsup .supshare {
+    background-position: -114px -163px;
+}
+
+.playsup .supvolum {
+   
+    background-position: -2px -248px;
+}
+
+.proAndtime {
+    width: 608px;
+    height: 14px;
+}
+.volLine{ 
+    height:37px;
+    position: relative; 
+    display:inline-block;
+    margin-top: -11px; 
+}
+
+.volLine:hover app-proVol {
+    display: block; 
+} 
+
+.volLine app-proVol{
+    display: none;
+    position: absolute;
+    left: 0px;
+    top: -112px;
+} 
+
+.volLine .supvolum{
+    margin-top: 11px;
+}
+
+app-proMusic,.timeTitle{
+    float: left;
+}
+
+
+
+
+
+.playsup .supplayloop {
+    background-position: -3px -344px;
+}
+
+.playsup .suppplaylist {
+    background-position: -42px -68px;
+}
+
+/*//////////////////////////////////////*/
+.playsup .supadd:hover {
+    background-position: -88px -189px;
+}
+
+.playsup .supshare:hover {
+    background-position: -114px -189px;
+}
+
+.playsup .supvolum:hover {
+    background-position: -31px -248px;
+}
+
+.playsup .supplayloop:hover {
+    background-position: -33px -344px;
+}
+
+.playsup .suppplaylist:hover {
+    background-position: -42px -98px;
+}

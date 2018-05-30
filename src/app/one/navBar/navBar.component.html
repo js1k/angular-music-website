@@ -1,0 +1,37 @@
+<div class="top">
+    <div class="top-sup">
+        <h1  class="title">
+            <a href="#">网易云音乐♫ </a>
+        </h1>
+
+        <ul>
+            <li>
+                <a [routerLink]="['find']" routerLinkActive="active">发现音乐</a>
+            </li>
+            <li>
+                <a [routerLink]="['mymusic']" routerLinkActive="active">我的音乐</a>
+            </li>
+            <li>
+                <a [routerLink]="['friend']" routerLinkActive="active">朋友</a>
+            </li>
+            <li>
+                <a [routerLink]="['product']" routerLinkActive="active">商城</a>
+            </li>
+            <li>
+                <a href="http://music.163.com/nmusician/web/index" routerLinkActive="active">音乐人</a>
+            </li>
+            <li>
+                <a [routerLink]="['load']">下载客户端</a>
+            </li>
+
+        </ul>
+        <div class="search">
+            <!-- <nz-input [nzType]="'search'" [nzPlaceHolder]="'音乐/视频/电台/用户'" [(ngModel)]="searchSt"  (nzOnSearch)="notiedSearchMusicSer()"></nz-input> -->
+            <input type="text" class="searchIn" placeholder="音乐/视频/电台/用户" [(ngModel)]="searchSt" (keyup.enter)="notiedSearchMusicSer()" />
+            <i class="searchicon"></i>
+
+            <a href="#">视频投稿</a>
+            <a href="#">登录</a>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,473 @@
+.songstab{
+    width: 709px;
+    padding: 47px 30px 40px 39px;
+    margin: 0 auto;
+   
+}
+
+.titlesup .name {
+    color: #333;
+}
+
+
+
+.boardlistbar {
+    border-bottom: 2px solid #c20c0c;
+    padding-bottom: 5px;
+}
+
+.boardlistbar .tablist{
+    float: left;
+}
+
+.boardlistbar .title{
+    font-size: 20px;
+    line-height: 28px;
+}
+
+.boardlistbar .number{
+    margin: 9px 5px 0 20px;
+}
+
+.boardlistbar .count {
+    float: right;
+}
+
+.count .red{
+    color: red;
+}   
+
+.tab {
+    height: 34px;
+    line-height: 34px;
+    background-color: #F6F6F6;
+    border-bottom:2px solid #DBDBDB;
+}
+
+.tab .indector,
+.tab .title,
+.tab .duration,
+.tab .singer {
+    border-right:1px solid #DBDBDB; 
+}
+
+.listdetail {
+    height: 30px;
+    line-height: 30px;
+}
+
+
+.songlist{
+    color: #333;
+    /* background-color: #f7f7f7; */
+}
+
+.ullist li,
+.ullist div {
+    float: left;
+}
+
+
+.ullist .indector,
+.ullist .title,
+.ullist .duration,
+.ullist .singer,
+.ullist .alum {
+    padding-left:10px;
+    padding-right:10px; 
+}
+
+.ullist .indector {
+    width: 74px;
+    height: 100%;
+}
+
+.ullist .title {
+    width: 237px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow:ellipsis;
+}
+
+.ullist .duration {
+    width:111px;
+}
+
+.ullist .singer {
+    width: 89px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow:ellipsis;
+}
+
+.ullist .alum{
+    width: 127px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow:ellipsis;
+}
+
+.title .canshow img,
+.title .canshow a {
+    float: left;
+}
+
+.title .canshow {
+    margin-top: 10px;
+}
+
+.indector .index {
+    width: 25px;
+    margin-left: 5px;
+}
+
+.indector .play {
+    float: right;
+    margin-right: 10px;
+    width: 17px;
+    height: 17px;
+    margin: 8px 0 0 0px;
+    background: url(https://s2.music.126.net/style/web2/img/table.png?d83ae4f37c13487886223beb2a867cfd) no-repeat 0 9999px;
+    background-position: 0 -103px;
+    cursor: pointer;
+}
+
+.indector .play:hover {
+    background-position: 0 -128px;
+}
+
+.duration .btns {
+    display: none;
+}
+
+.listdetail:hover .btns {
+    display: inline;
+}
+
+.listdetail:hover .times {
+    display: none;
+}
+
+.btns {
+    margin-top: 10px;
+    font-size: 0;
+}
+
+.btns span {
+    cursor: pointer;
+    
+}
+
+.btns .addplay ,
+.btns .record,
+.btns .share,
+.btns .down {
+    display: inline-block;
+    width: 18px;
+    height: 16px;
+    margin-left: 1px;
+    background: url(https://s2.music.126.net/style/web2/img/table.png?d83ae4f37c13487886223beb2a867cfd);
+   
+}
+
+.btns .addplay {
+    background: url(https://s2.music.126.net/style/web2/img/icon.png?cfc4e8274ecd9dc9068e9888a721097a);
+    background-position: 3px -700px;
+}
+
+.btns .record {
+    background-position: 0 -174px;
+}
+
+.btns .share {
+    background-position: 0 -195px;
+}
+
+.btns .down {
+    background-position: -79px -174px;
+}
+
+.btns .addplay:hover {
+    background-position: -19px -700px;
+}
+
+.btns .record:hover {
+    background-position: -20px -174px;
+}
+
+.btns .share:hover {
+    background-position: -20px -195px;
+}
+
+.btns .down:hover {
+    background-position: -102px -174px
+}
+
+.wrap{
+    background-color: #ced7d845 
+}
+
+
+/*11111111111下面是歌单里面的歌曲列表11111111111111111*/
+/*11111111111下面是歌单里面的歌曲列表11111111111111111*/
+/*11111111111下面是歌单里面的歌曲列表11111111111111111*/
+
+.btngroup span i {
+    font-style: normal;
+}
+
+.songlists {
+    margin-bottom: 27px;
+    font-size: 12px;
+}
+
+.songstopleft {
+    position: relative;
+}
+
+.songstopleft,.songstopright
+ {
+    float: left;
+}
+
+.songstopleft {
+    width: 200px;
+    height: 200px;
+}
+
+.songstopleft img {
+    display: block;
+    width: 200px;
+    height: 200px;
+}
+
+.songstopleft .mask {
+    width: 208px;
+    height: 208px;
+    display: block;
+    position: absolute;
+    top: -4px;
+    left: -4px;
+    background: url(https://s2.music.126.net/style/web2/img/coverall.png?4b44216de6c541115766c06da345fd30) no-repeat;
+    background-position: 0 -1285px;
+}
+
+.title .icontype,
+.update .supimg {
+    background: url(https://s2.music.126.net/style/web2/img/icon.png?daecd7bc7d05342e17881193ea4ccd5e) no-repeat;
+}
+
+.songstopright {
+    margin: 0 0 0 30px;
+    width: 410px;
+    color: #333;
+}
+
+.songstopright .update {
+    line-height: 40px;
+    font-size: 12px;
+    margin-bottom: 20px;
+}
+
+.update .nikeimg,
+.update img {
+    width: 35px;
+    height: 35px;
+}
+
+.update .nikeimg {
+    margin-right: 10px;
+}
+
+.update .nikename .link {
+    color: #0c73c2;
+    text-decoration: none;
+}
+
+.update .nikename .link:hover {
+    text-decoration: underline;
+}
+
+.update .supimg {
+    width: 12px;
+    height: 13px;
+    background-position: -65px -840px;
+    margin: 12px 15px 0 3px;
+}
+
+.songstopright .title {
+    line-height: 24px;
+    font-size: 20px;
+    font-weight: normal;
+    margin-bottom: 12px;
+}
+
+.title .icontype {
+    display: block;
+    float: left;
+    width: 54px;
+    height: 24px;
+    background-position: 0 -243px;
+}
+
+.title .desc {
+    margin-left: 64px;
+    /* word-wrap: break-word;
+    word-break: break-word;
+    white-space: normal; */
+}
+
+.title .desc h2 {
+    line-height: 24px;
+    font-size: 20px;
+    font-weight: normal;
+}
+
+.btngroup {
+    line-height: 31px;
+}
+
+.btngroup .icon {
+    background: url(https://s2.music.126.net/style/web2/img/button2.png?0eb80086f1c7c9c85aa8f1b2565ca3ac);
+}
+
+.btngroup span {
+    cursor: pointer;
+    float: left;
+}
+
+.btngroup .recode,
+.btngroup .share,
+.btngroup .down,
+.btngroup .recommo {
+    display: block;
+    float: left;
+    height: 31px;
+    margin-right: 6px;
+    padding-right: 5px;
+    border-radius: 4px;
+    font-size: 12px;
+    background: url(https://s2.music.126.net/style/web2/img/button2.png?0eb80086f1c7c9c85aa8f1b2565ca3ac);
+    background-position: right -1020px;
+}
+
+.btngroup .playlist {
+    float: left;
+    height: 31px;
+    background-color: #2273C2;
+    font-size: 12px;
+    color: white;
+    border-radius: 4px 0 0 4px;
+    padding: 0 5px 0 0;
+    background-color: #3987D2;
+}
+
+.btngroup .playlist:hover {
+    background-color: #539EE4;
+}
+
+.playlist .iconcontainer {
+    padding: 0 7px 0 8px;
+    font-style: normal;
+    display: block;
+}
+
+.playlist .iconcontainer .playbtn {
+    display: block;
+    width: 20px;
+    height: 18px;
+    float: left;
+    background-position: 0 -1622px;
+    margin: 6px 2px 2px 0;
+}
+
+.btngroup .playadd {
+    width: 31px;
+    display: block;
+    height: 31px;
+    background-position: 0 -1588px;
+    margin-right: 5px;
+}
+
+.btngroup .playadd:hover {
+    background-position: -40px -1588px;
+}
+
+.btngroup .recodeicon,
+.btngroup .shareicon,
+.btngroup .downicon,
+.btngroup .recommoicon {
+    float: left;
+    display: block;
+    padding: 0 2px 0 28px;
+}
+
+.btngroup .recodeicon {
+    background-position: 0 -977px;
+}
+
+.btngroup .shareicon {
+    background-position: 0 -1225px;
+}
+
+.btngroup .downicon {
+    background-position: 0 -2761px;
+}
+
+.btngroup .recommoicon {
+    background-position: 0 -1465px;
+}
+
+.tags {
+    height: 22px;
+    margin: 25px 0 5px;
+}
+
+.tags .taglist {
+    padding: 2px 12px;
+    margin: 0px 10px 3px 0;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #F6F6F6;
+    font-size: 12px;
+    color: #777;
+    float: left;
+}
+
+.tags .tagtitle {
+    color: #333;
+    font-size: 12px;
+    display: block;
+    width: 34px;
+    height: 22px;
+    line-height: 22px;
+    float: left;
+}
+
+.tags .taglist:hover {
+    background-color: #FDFDFD
+}
+
+.srccontainer {
+    float: left;
+    margin: 13px 0 0 40px;
+    line-height: 23px; 
+}
+
+.srccontainer .showmore {
+    margin-top: 5px;
+    color: #2273C2;
+    cursor: pointer;   
+}
+.srccontainer .showmore:hover {
+    text-decoration: underline;
+}
+
+.srccontainer .showmore i {
+    display: inline-block;
+    width:11px;
+    height: 8px;
+    vertical-align: middle;
+    background: url(https://s2.music.126.net/style/web2/img/icon.png?601a3646019981bc04d77c43e6987e2a);
+    background-position: -65px -520px;     
+}

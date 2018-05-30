@@ -1,0 +1,12 @@
+<div class="topBar">
+  <div class="titlet">
+    <a href="#">{{barTitle}}</a>
+  </div>
+
+  <div class="rightt">
+      <a [routerLink]='[routerPath,routerParam]'>更多
+        <i class="rightPict"></i>
+      </a>
+    </div>
+  <ng-content select = ".topmusiccontainer" ></ng-content>
+</div>

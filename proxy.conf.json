@@ -1,0 +1,12 @@
+{
+    "/weapi":{
+        "target":"http://music.163.com",
+        "changeOrigin":true
+    } ,
+
+    "/api":{
+        "target":"http://music.163.com",
+        "changeOrigin":true
+    } 
+   
+} 

@@ -1,0 +1,33 @@
+<!-- <app-carouse></app-carouse> -->
+ 
+  <div class="contet" >
+    <div class="homeleft">
+        <app-topMusic></app-topMusic>
+        <!-- <app-suggest></app-suggest> -->
+        <!-- <app-newCD></app-newCD> -->
+
+        <div>
+            <app-asupbar [barTitle]=" '榜单' "  [routerPath] = " '../board/playlist' " [routerParam] = " '19723756' "></app-asupbar>
+
+            <div class="borderrigth">
+                <div class="fastBoard">
+                    <app-billboard [id]="'19723756'"></app-billboard>
+                </div>
+                <div class="newBoard">
+                    <app-billboard [id]="'3779629'"></app-billboard>
+                </div>
+                <div class="personBoard">
+                    <app-billboard [id]="'2884035'"></app-billboard>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="homeright">
+        <app-userinfo></app-userinfo>
+        <div class="homerightbot">
+            <app-singerlist></app-singerlist>
+            <app-livelist></app-livelist>
+        </div>
+    </div>
+</div>

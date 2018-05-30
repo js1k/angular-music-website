@@ -1,0 +1,25 @@
+<ul class="list">
+    <h2 class="title">云音乐特色榜</h2>
+    <div *ngFor="let item of allBoard;let indexT = index">
+        <li class="listitem">
+            <a [routerLink]='["./playlist",item?.boardTypeId]' routerLinkActive="routeractive" class="totallink">
+                <div class="covbox clear">
+                    <div class="covleft">
+                        <a href="#">
+                            <img  class="covimg" [src]=' item?.coverImgUrl+"?param=40y40" ' alt="">
+                        </a>
+                    </div>
+                    <div class="covrigtt">
+                        <h4>{{item?.boardTypename}}</h4>
+                        <p>{{item?.update}}</p>
+                    </div>
+                </div>
+            </a>
+        </li>
+        <div *ngIf="indexT==3">
+            <h2 class="title">全球媒体榜</h2>
+        </div>
+    </div>
+
+</ul>
+

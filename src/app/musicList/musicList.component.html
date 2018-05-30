@@ -1,0 +1,43 @@
+<div class="container">
+  <nz-table #nzTable [nzDataSource]="searchMusics" [nzPageSize]="20">
+    <thead nz-thead>
+      <tr>
+        <th nz-th>
+          <span>歌曲序号</span>
+        </th>
+        <th nz-th>
+          <span>歌曲名称</span>
+        </th>
+        <th nz-th>
+          <span>歌手</span>
+        </th>
+        <th nz-th>
+          <span>专辑名称</span>
+        </th>
+        <th nz-th>
+          <span>时长</span>
+        </th>
+      </tr>
+    </thead>
+    <tbody nz-tbody>
+      <tr nz-tbody-tr *ngFor="let data of searchMusics; let in = index">
+        <td nz-td>
+          <span title="播放" class="play" (click)=" paly(data?.songId) ">播放</span>
+        </td>
+        <td nz-td>
+          <a href="#" class="songlink">{{data?.song}}</a>
+        </td>
+        <td nz-td>
+          <a href="#">{{data?.singer}}</a>
+        </td>
+        <td nz-td>
+          <a href=""  class="songlink"> {{data?.alName}}</a>
+        </td>
+        <td nz-td>
+          <a href=""  class="songlink">{{data?.timeTotal}}</a>
+        </td>
+      </tr>
+    </tbody>
+  </nz-table>
+
+</div>

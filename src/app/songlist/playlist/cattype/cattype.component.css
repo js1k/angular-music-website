@@ -1,0 +1,101 @@
+li {
+    list-style: none;
+}
+
+a {
+    color: #333;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+
+.floatx {
+    float: left;
+}
+.catcontainer {
+    border: 1px solid #ccc;
+    font-size: 12px;
+    width: 700px;
+}
+.allcatdesc {
+    display: block;
+    width: 75px;
+    height: 26px;
+    border: 1px solid #CCCCCC;
+    border-radius: 5px;
+    text-align: center;
+    line-height: 26px;
+    font-size: 12px;
+    margin-left: 25px;
+}
+.indector{
+    height: 17px;
+    position: relative;
+
+}
+.indectoricon {
+    position: absolute;
+    left: 120px;
+    top: -11px;
+    display: block;
+    width: 24px;
+    height: 11px;
+    background: url(https://s2.music.126.net/style/web2/img/iconall.png?3b3e2f8b632c54c4b33c74c680f55fac);
+    background-position: -48px 0;
+}
+.allcattype {
+    border-bottom: 1px solid #e6e6e6;
+    height: 37px;
+}
+.cattypeleft .langicon {
+    display: block;
+    width: 23px;
+    height: 23px;
+    background: url(https://s2.music.126.net/style/web2/img/icon.png?a7fc4d417ba5a384ab39c8a384ca6119) no-repeat 0 9999px;
+    margin-right: 8px;
+}
+.cattypeleft .icon0{
+    background-position: -20px -735px;
+}
+.cattypeleft .icon1{
+    background-position: 0 -60px;
+}
+
+.cattypeleft .icon2{
+    background-position: 0 -88px;
+}
+
+.cattypeleft .icon3{
+    background-position: 0 -117px;
+}
+.cattypeleft .icon4{
+    background-position: 0 -141px;
+}
+.cattypeleft {
+    margin-left: 25px;
+    width: 71px;
+    margin-top: 15px;
+    
+}
+.cattypeleft .desc {
+    font-weight: bold;
+    line-height: 24px;
+}
+.cattyperight {
+    padding: 16px 15px 0 15px;
+    width: 602px;
+    border-left:1px solid #e6e6e6;
+    
+}
+.typelist li {
+    float: left;
+    line-height: 24px;
+}
+.typelist li span {
+    margin: 0 8px 0 9px;
+    color: #e6e6e6;
+}
+.addpadding {  
+    padding-bottom: 25px;
+}

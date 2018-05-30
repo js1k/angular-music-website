@@ -1,0 +1,68 @@
+.list{
+    width: 240px;
+        /* border-left: 1px solid #ccc;
+        border-right: 1px solid #ccc;  */
+    padding-top: 30px;
+    color: #333;
+    background-color:#F9F9F9;
+}
+
+.title{
+    padding: 10px 10px 12px 15px;
+    font-size: 14px;
+    color: #000;
+}
+
+.listitem {
+  
+    font-size: 12px;
+    /* width: 240px; */
+}
+.listitem:hover{
+    background-color: #f4f2f2;;
+}
+
+.listitem .totallink{
+    display: block;
+    padding: 10px 0 10px 20px;
+    /* width: 220px; */
+}
+.covbox{
+    width: 220px;
+    
+}
+.covbox .covleft{
+    width:40px;
+    height: 40px;
+    float: left;
+    margin-right: 10px;
+}
+
+.covleft a{
+    display: block;
+    width: 40px;
+    height: 40px;
+    float: left;
+}
+.covleft .covimg{
+    width: 40px;
+}
+.covbox .covrigtt{
+    float: left;
+}
+
+.covrigtt h4{
+    margin: 2px 0 8px 0;
+    line-height: 14px;
+ }
+ 
+.covrigtt p{
+    color: #666;
+    width: 170px;
+    line-height: 16px;
+}
+
+.routeractive {
+    background-color: #e6e6e6;; 
+}
+

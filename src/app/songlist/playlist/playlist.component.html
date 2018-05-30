@@ -1,0 +1,63 @@
+<div class="songtotal">
+
+    <div class="songtcontainer">
+
+        <div class="tabbar clear">
+            <div class="barleft floatx">
+                <h3 class="floatx">
+                    <span class="title floatx">
+                        {{title}}
+                    </span>
+                    <a href="#" class="types floatx" (click)="selectCatWindow()">
+                        <i class="iconinfo">
+                            选择分类
+                            <em class="icontype floatr"></em>
+                        </i>
+                    </a>
+                </h3>
+            </div>
+
+            <div class="barright">
+                <a href="#" class="hot">热门</a>
+                <a href="#" class="new">最新</a>
+            </div>
+            <div class="selectcatwindow">
+                <app-cattype [(hidden)]="selectShow"></app-cattype>
+            </div>
+
+        </div>
+
+        <div class="songlist">
+            <ul>
+                <li *ngFor="let item of SongCollection">
+                    <div class="cover">
+                        <img [src]=' item?.coverImgUrl + "?param=140y140" ' class="coverimg" />
+                        <a *ngIf=" item?.id " [routerLink]="['../../detailby',item?.id]" [title]=" item?.name " class="coverlink"> </a>
+                        <div class="coverbot">
+                            <span class="coverbotsup"></span>
+                            <span class="coverbotcount"> {{ item?.playCount | towan }}</span>
+                            <a href="#" class="coverbotplay"></a>
+                        </div>
+                    </div>
+
+                    <div class="infolist">
+                        <p class="descinfo ">
+                            <a href="" class="hideslip">
+                                {{item?.name}}
+                            </a>
+                        </p>
+                        <p class="creatinfo">
+                            <a [href]="item?.aLinkUrl" class="hideslip">
+                                <span>by</span>
+                                <span>{{item?.nickname}}</span>
+
+                            </a>
+                        </p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+
+</div>

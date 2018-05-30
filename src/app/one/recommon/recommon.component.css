@@ -1,0 +1,39 @@
+.contet {
+    width: 982px;
+    margin: 0 auto;
+    
+}
+
+.contet::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+.fastBoard,.newBoard,.personBoard {
+    float: left;
+}
+
+
+.borderrigth {
+    margin-top: 20px;
+    border-right: 1px solid rgba(0, 0, 0, 0.1);
+    height:476px;
+}
+
+
+.homeleft {
+    float: left;
+    padding: 20px;
+}
+
+.homerightbot {
+    width: 210px;
+    margin-left: 20px;
+}
+
+.homeright {
+    float: right;
+    margin-top: 30px;
+   
+}

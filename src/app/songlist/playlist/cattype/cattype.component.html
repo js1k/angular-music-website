@@ -1,0 +1,40 @@
+
+<div *ngIf="hidden" class="catcontainer">
+  <div class="indector">
+    <i class="indectoricon"></i>
+  </div>
+  <div class="allcattype">
+    <a href="#" class="allcatdesc">全部风格</a>
+  </div>
+
+  <div *ngFor="let itemsss of allCattype;let newind = index">
+
+    <div class="cattype clear">
+      <div class="cattypeleft floatx ">
+
+        <i class="langicon floatx" [ngClass]='{"icon0":newind ===0,"icon1":newind ===1,"icon2":newind ===2,"icon3":newind ===3,"icon4":newind ===4}'></i>
+        <span class="desc floatx">
+          {{ itemsss["cattype"]}}
+        </span>
+      </div>
+      <div class="cattyperight floatx  " [ngClass]=" {'addpadding':newind ==4} ">
+
+        <ul class="typelist floatx ">
+
+          <li *ngFor="let item of itemsss['oneCats']">
+
+            <a *ngIf="item['name']" [routerLink]="['../', item['name'] ]" (click)="hiddenitself()">{{item["name"]}}</a>
+            <span>
+              |
+            </span>
+
+          </li>
+        </ul>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</div>

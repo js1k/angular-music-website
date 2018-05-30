@@ -1,0 +1,40 @@
+<div class="top">
+  <div class="container">
+
+    <div class="left">
+      <img class="leftImg" [src]="billboardPlayList?.coverImgUrl+'?param=100y100'" />
+      <a *ngIf="billboardPlayList?.boardTypeId" [routerLink]="['../board/playlist',billboardPlayList?.boardTypeId]" class="leftA">
+      </a>
+    </div>
+
+    <div class="right">
+      <a *ngIf="billboardPlayList?.boardTypeId" [routerLink]="['../board/playlist',billboardPlayList?.boardTypeId]" class="title">
+        <h3 [innerHTML]="billboardPlayList?.boardTypename"></h3>
+      </a>
+
+      <div class="btnGroup">
+        <a href="#" class="playBtn" title="播放" (click)="pushIds()">播放</a>
+        <a href="#" class="addBtn" title="收藏">收藏</a>
+      </div>
+    </div>
+  </div>
+
+  <ul class="listcontainer">
+    <li *ngFor="let item of billboardPlayList?.searchMusicS ;let in = index" class="musiclist" [ngClass]="{'liwrapcolor': in%2==0}">
+      <span class="num" [ngClass]="{ 'numsepcie': in < 3 }">{{in+1}}</span>
+
+      <a *ngIf="item?.songId" [routerLink]="['../songinfo/detail',item?.songId]" class="title">{{item?.song}}</a>
+
+      <div class="plays">
+        <span title="播放" class="play" (click)="paly(item?.songId)"></span>
+        <span title="添加到播放列表" class="addplay"></span>
+        <span title="收藏" class="addcollect"></span>
+      </div>
+
+    </li>
+
+  </ul>
+  <div class="bottom">
+    <a *ngIf="billboardPlayList?.boardTypeId" [routerLink]='["../board/playlist",billboardPlayList?.boardTypeId]'>查看全部>> </a>
+  </div>
+</div>

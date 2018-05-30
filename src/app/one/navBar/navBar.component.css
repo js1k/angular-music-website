@@ -1,0 +1,79 @@
+a {
+    color:#fff;
+   
+}
+
+.title a {
+    padding-right: 20px;
+}
+
+.top {
+    background-color: #404040;  
+    height: 70px;    
+   
+}
+
+.top-sup {
+    text-align: center;
+    width: 1100px;
+    margin: 0 auto;
+    height: 100%;
+    line-height: 70px;  
+}
+
+.top-sup h1, .top-sup ul ,.top-sup li ,.top-sup a , .top-sup div {
+    display: inline-block;
+}
+
+.top-sup ul{
+    font-size: 0;
+}
+
+.top-sup div , .top-sup ul {
+    vertical-align: top;   
+}
+.top-sup ul a , .top-sup div a {
+    padding: 0 19px;   
+    font-size: 14px;      
+}
+
+.top-sup ul a:hover ,.top-sup div a:hover , .top-sup ul a:focus, .top-sup div a:focus {
+    background-color: rgb(0, 0, 0);  
+}
+
+
+
+.search {
+    position: relative;
+}
+.search .searchIn {
+    
+    width: 156px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    height: 32px;
+    padding: 0;
+    text-indent: 25px;
+    outline: none;
+    
+}
+
+.search .searchicon{
+    background: url(https://s2.music.126.net/style/web2/img/frame/topbar.png?914bf8a1e7874dde0b97da9bb03ded62);
+    background-position: -7px -106px;
+    width: 18px;
+    height: 18px;
+    display: block;
+    position: absolute;
+    left: 5px;
+    top: 27px;
+}
+
+
+.active {
+    background: #000;
+}
+
+
+
+

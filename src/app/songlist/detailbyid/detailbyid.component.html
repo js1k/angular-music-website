@@ -1,0 +1,161 @@
+<div class="songstab">
+
+  <div class="songlists clear">
+    <div class="songstopleft">
+      <img [src]=' songInfoAndLists?.songCollection.coverImgUrl + "?param=200y200" '>
+      <span class="mask"></span>
+
+    </div>
+    <div class="songstopright">
+      <div class="title clear">
+        <i class="icontype"></i>
+        <div class="desc">
+          <h2>{{songInfoAndLists?.songCollection.name}}</h2>
+        </div>
+      </div>
+
+      <div class="update clear">
+        <a href="#" class="nikeimg floatx">
+          <img class="floatx" [src]=' songInfoAndLists?.songCollection.avatarUrl + "?param=40y40" ' />
+        </a>
+        <span class="nikename floatx">
+          <a href="#" class="link">{{songInfoAndLists?.songCollection.nickname}}</a>
+        </span>
+        <i class="supimg floatx"></i>
+        <span class="floatx">
+          {{songInfoAndLists?.songCollection.updateTime | date:"yyyy-MM-dd"}} 创建
+        </span>
+
+      </div>
+
+      <div class="btngroup clear">
+
+        <span href="#" class="playlist floatx" (click) = "pushIds()">
+          <i class="iconcontainer">
+            <span class="playbtn icon"></span> 播放
+          </i>
+        </span>
+        <span href="#" class="playadd floatx icon"></span>
+        <span class="recode">
+          <i class="recodeicon icon">( {{songInfoAndLists?.songCollection.subscribedCount}} )</i>
+        </span>
+        <span class="share">
+          <i class="shareicon icon">({{songInfoAndLists?.songCollection.shareCount}})</i>
+        </span>
+        <span class="down">
+          <i class="downicon icon">下载</i>
+        </span>
+        <span class="recommo">
+          <i class="recommoicon icon">({{songInfoAndLists?.songCollection.commentCount}})</i>
+        </span>
+      </div>
+
+      <div class="tags clear">
+        <span class="tagtitle">
+          标签: 
+        </span>
+        <a *ngIf="songInfoAndLists?.songCollection.tags[0]" [routerLink]=" [ '../../collection',songInfoAndLists?.songCollection.tags[0] ]"  class="taglist">{{songInfoAndLists?.songCollection.tags[0]}}</a>
+        <a *ngIf="songInfoAndLists?.songCollection.tags[1]" [routerLink]=" [ '../../collection',songInfoAndLists?.songCollection.tags[1] ]"  class="taglist">{{songInfoAndLists?.songCollection.tags[1]}}</a>
+        <a *ngIf="songInfoAndLists?.songCollection.tags[2]" [routerLink]=" [ '../../collection',songInfoAndLists?.songCollection.tags[2] ]"  class="taglist">{{songInfoAndLists?.songCollection.tags[2]}}</a>
+      </div>
+
+  
+     
+        
+        <div class="srccontainer">
+          <div [innerHTML]=" '介绍:&nbsp;&nbsp;' + songInfoAndLists?.songCollection.description['str1']['changingThisBreaksApplicationSecurity']" class="one"></div>
+          <div *ngIf="isShow" [innerHTML]="songInfoAndLists?.songCollection.description['str2']['changingThisBreaksApplicationSecurity']"
+            class="two"></div>
+          <span (click)="showing()" class="showmore">展开
+            <i class="indector"></i>
+          </span>
+        </div>
+      </div>
+    
+
+    
+  </div>
+
+  <div class="boarddetail">
+    <div class="boardlistbar clear">
+      <h3 class="tablist title">歌曲列表</h3>
+      <span class="tablist number">{{songInfoAndLists?.songCollection.trackCount}}首歌曲</span>
+      <span class="count number">
+        播放:
+        <span class="red">{{songInfoAndLists?.songCollection.playCount}}</span> 次</span>
+    </div>
+
+    <div class="songlist">
+
+      <ul class="clear ullist">
+        <li class="tab float">
+          <div class="float indector">
+
+          </div>
+
+          <div class="float title">
+            歌曲标题
+          </div>
+          <div class="float duration">
+            时长
+          </div>
+          <div class="float singer">
+            歌手
+          </div>
+          <div class="float alum">
+            专辑
+          </div>
+        </li>
+
+        <li *ngFor="let item of songInfoAndLists?.searchMusic ;let indeof =index" class="listdetail clear" [ngClass]=' {"wrap":indeof%2==0} '>
+          <div class="float indector ">
+            <div class="float index">
+              {{indeof+1}}
+            </div>
+            <span class="play" (click)="playingone(item?.songId)">
+            </span>
+          </div>
+
+          <div class="float title">
+
+            <div class="titlesup">
+              <a *ngIf="item?.songId" [routerLink]="['../../../songinfo/detail',item?.songId]" class="name">
+                {{item?.song}}
+              </a>
+            </div>
+
+          </div>
+          <div class="float duration">
+
+            <div class="times">
+              {{item?.timeTotal}}
+            </div>
+
+            <div class="btns">
+              <span title="添加到播放列表" class="addplay"></span>
+              <span title="收藏" class="record"></span>
+              <span title="分享" class="share"></span>
+              <span title="下载" class="down"></span>
+            </div>
+
+          </div>
+
+          <div class="float singer">
+            {{item?.singer}}
+          </div>
+
+          <div class="float alum">
+            {{item?.alName}}
+          </div>
+
+        </li>
+      </ul>
+    </div>
+
+  </div>
+
+  <div class="commontc">
+    <app-common [type]=" 'A_PL_0_' " ></app-common>
+  </div>
+
+</div>

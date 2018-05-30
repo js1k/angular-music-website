@@ -1,0 +1,31 @@
+:host ::ng-deep .ant-carousel  {
+    text-align: center;
+    width: 730px;
+    height: 336px;
+    line-height: 160px;
+    background: #364d79;
+    color: #fff;
+    overflow: hidden;
+  }
+  .carouse {
+    background-color: paleturquoise;
+  }
+
+  .carouseTitle {
+    width: 984px;
+    margin: 0 auto;
+  }
+  .container {
+    width: 730px;   
+    position: relative;
+  }
+
+  .containerSider {
+    width: 254px;
+    height: 336px;
+   
+    position: absolute;
+    top: 0;
+    left: 730px;
+    background: url(http://s2.music.126.net/style/web2/img/index/download.png?ad66200b306bffcc47dcd3c7a2a1bd57);
+  }

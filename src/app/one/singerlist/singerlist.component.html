@@ -1,0 +1,23 @@
+<div class="singerbar">
+  <h3>
+    <span class="">
+      入驻歌手
+    </span>
+    <a href="">查看全部></a>
+  </h3>
+</div>
+<div *ngFor="let item of userInfoList" class="singContainer">
+  <a [href]= "item?.aLinkUrl" class="link">
+    <div class="singer">
+      <img [src]="item?.imgUrl" class="singerimg" />
+    </div>
+
+    <div class="stitle">
+      <h4>{{item?.singerTitle}}</h4>
+      <p>{{item?.desc}}</p>
+    </div>
+  </a>
+</div>
+
+<a href="http://music.163.com/nmusician/web/index" target="_blank" class="singin">申请成为网易音乐人</a>
+

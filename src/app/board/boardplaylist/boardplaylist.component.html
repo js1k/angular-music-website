@@ -1,0 +1,119 @@
+<div class="board clear">
+    <div class="boardtopleft">
+        <img [src]=' billboardList?.coverImgUrl + "?param=150y150" ' alt="">
+        <span class="mask"></span>
+    </div>
+    <div class="boardtopright">
+        <h2 class="title">{{billboardList?.boardTypename}}</h2>
+        <div class="update">最近更新:{{billboardList?.updateTime | date:'MM月dd日'}}(每天更新)</div>
+        <div class="btngroup clear">
+
+            <span  class="playlist floatx" (click) = pushIds() >
+                <i class="iconcontainer">
+                    <span class="playbtn icon"></span> 播放
+                </i>
+            </span>
+            <span  class="playadd floatx icon"></span>
+            <span class="recode">
+                <i class="recodeicon icon">({{billboardList?.subscribedCount}})</i>
+            </span>
+            <span class="share">
+                <i class="shareicon icon">({{billboardList?.shareCount}})</i>
+            </span>
+            <span class="down">
+                <i class="downicon icon">下载</i>
+            </span>
+            <span class="recommo">
+                <i class="recommoicon icon">({{billboardList?.commentCount}})</i>
+            </span>
+        </div>
+    </div>
+</div>
+
+
+<div class="boarddetail">
+    <div class="boardlistbar clear">
+        <h3 class="tablist title">歌曲列表</h3>
+        <span class="tablist number">100首歌曲</span>
+        <span class="count number" >
+            播放:
+        <span class="red">{{billboardList?.playCount}}</span> 次</span>
+    </div>
+
+    <div class="songlist">
+
+        <ul class="clear ullist">
+            <li class="tab float">
+                <div class="float indector">
+
+                </div>
+
+                <div class="float title">
+                    标题
+                </div>
+                <div class="float duration">
+                    时长
+                </div>
+                <div class="float singer">
+                    歌手
+                </div>
+
+            </li>
+
+            <li *ngFor="let item of billboardList?.searchMusicS ;let indeof =index" class="listdetail " [ngClass]=' {"newheight":indeof<3,"wrap":indeof%2==0} '>
+                <div class="float indector ">
+                    <div class="float index">
+                        {{indeof+1}}
+                    </div>
+                    <div class="float srotnew">
+                        new
+                    </div>
+                </div>
+
+                <div class="float title">
+
+                    <div *ngIf="indeof<3" class="float canshow">
+                        <a href="/song?id=548097885">
+                            <img [src]=' item?.pictureUl+"?param=50y50&quality=100" ' />
+                        </a>
+                    </div>
+
+                    <div class="titlesup">
+
+                        <span class="play " (click)="playingone(item?.songId)" [ngClass]='{"newplay":indeof<3}'>
+
+                        </span>
+                        <a *ngIf="item?.songId" [routerLink]="['../../../songinfo/detail',item?.songId]" class="name">
+                            {{item?.song}}
+                        </a>
+                    </div>
+
+                </div>
+                <div class="float duration">
+
+                    <div class="times">
+                        03:23
+                    </div>
+
+                    <div class="btns">
+                        <a href="#" title="添加到播放列表" class="addplay"></a>
+                        <a href="#" title="收藏" class="record"></a>
+                        <a href="#" title="分享" class="share"></a>
+                        <a href="#" title="下载" class="down"></a>
+                    </div>
+
+                </div>
+
+                <div class="float singer">
+                    {{item?.singer}}
+                </div>
+            </li>
+        </ul>
+    </div>
+
+
+</div>
+
+<div class="commontc">
+        <app-common [type]=" 'A_PL_0_' " ></app-common>
+</div>

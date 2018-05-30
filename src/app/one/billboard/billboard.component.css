@@ -1,0 +1,217 @@
+a {
+    color:#333;
+}
+
+ul {
+    list-style: none;
+}
+
+
+
+.titlet{
+    font-size: 20px;
+    display: inline-block;
+}
+
+.rightt {
+    display: inline-block;
+    position: absolute;
+    right: 3px;
+    line-height: 33px;
+    
+}
+.rightt a {
+    color: rgba(0, 0, 0, 0.65);
+}
+
+
+.top {
+    width: 230px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-right:none; 
+}
+
+
+
+.container {
+    box-sizing: border-box;
+    width: 230px;
+    height: 120px;
+    padding: 20px 0 0 19px;
+    background-color: #f4f4f4;
+}
+
+.left {
+    width: 80px;
+    height: 80px;
+    position: relative;
+    float: left;
+}
+.leftImg,
+.leftA {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.leftA {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: url(http://s2.music.126.net/style/web2/img/coverall.png?dc5aee3c535e94a7e3d4b9ab4df8022f);
+    background-position: -145px -57px;
+}
+
+.right {
+    float: left;
+    margin: 6px 0 0 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 116px;
+}
+
+.right .title {
+    color: #333;
+    text-decoration: none;
+}
+
+.right .title:hover {
+    text-decoration: underline;
+}
+
+.right .title h3 {
+    font-size: 14px;
+}
+
+.right .title h3:hover {
+    text-decoration: underline;
+}
+
+.btnGroup .playBtn,
+.btnGroup .addBtn {
+    display: block;
+    text-decoration: none;
+    float: left;
+    margin: 10px 10px 0 0;
+    color: #333;
+    text-indent: -9999px;
+    width: 22px;
+    height: 22px;
+    background: url(https://s2.music.126.net/style/web2/img/index/index.png?2b44914ce59c5c2c3002425a1d7e0089);
+}
+
+.btnGroup .playBtn {
+    background-position: -267px -205px;
+}
+
+.btnGroup .playBtn:hover {
+    background-position: -267px -235px;
+}
+
+.btnGroup .addBtn {
+    background-position: -300px -205px;
+}
+
+.btnGroup .addBtn:hover {
+    background-position: -300px -235px;
+}
+
+.listcontainer {  
+    width: 230px;
+}
+
+.musiclist {
+    line-height: 32px;
+    height: 32px;
+    padding-left: 15px;
+    box-sizing: border-box;
+}
+
+.liwrapcolor {
+    background-color: #e8e8e8;
+}
+
+.musiclist:hover .plays {
+    display: block;
+}
+
+.musiclist a {
+    display: block;
+}
+
+.musiclist .num,
+.musiclist .title {
+    float: left;
+}
+
+.numsepcie {
+    color: red
+}
+
+.musiclist .num {
+    width: 35px;
+    height: 32px;
+    
+    text-align: center;
+}
+
+.musiclist .title {
+    width: 90px;
+    overflow: hidden;
+    text-overflow:ellipsis;
+    white-space: nowrap;
+}
+
+.plays {
+    float: right;
+    margin-top: 7px;
+    display: none;
+}
+
+.plays span {
+    float: left;
+    cursor: pointer;
+    width: 17px;
+    height: 17px;
+    text-align: center;
+    margin-right: 10px;
+    vertical-align: middle;
+    background: url(https://s2.music.126.net/style/web2/img/index/index.png?2b44914ce59c5c2c3002425a1d7e0089);
+}
+
+.plays .play {
+    background-position: -267px -268px;
+}
+
+.plays .addplay {
+    background: url(https://s2.music.126.net/style/web2/img/icon.png?ce2b30c6133e221a078a62494b97d377);
+    background-position: 2px -698px;
+}
+
+.plays .addcollect {
+    background-position: -297px -268px;
+}
+
+.plays .play:hover {
+    background-position: -267px -288px;
+}
+
+.plays .addplay:hover {
+    background-position: -20px -698px;
+}
+
+.plays .addcollect:hover {
+    background-position: -297px -288px;
+}
+
+.bottom {
+    width: 230px;
+    height: 32px;
+    line-height: 32px;
+    background-color: #e8e8e8;
+    text-align: right;
+    font-size: 12px;			
+}
+
+.bottom a{
+    margin-right: 32px;	
+}

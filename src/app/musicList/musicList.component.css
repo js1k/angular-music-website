@@ -1,0 +1,11 @@
+.container {
+    width: 980px;
+    margin: 0 auto;
+}
+.play {
+    cursor: pointer;
+}
+
+.songlink{
+    color: #5e5c58;
+}

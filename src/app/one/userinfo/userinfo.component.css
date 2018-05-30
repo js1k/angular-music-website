@@ -1,0 +1,74 @@
+.user {
+    width: 250px;
+}
+
+.user-tou {
+    float: left;
+}
+
+.user-des {
+    margin-left: 98px;
+    width: 115px;
+    font-size: 12px;
+}
+
+.user-name a {
+    font-weight: bold;
+    font-size: 14px;
+    color: #333;
+}
+
+.user-a {
+    width: 100px;
+    height: 31px;
+    display: block;
+    background-color: blue;
+    color: white;
+    text-align: center;
+    line-height: 31px;
+    border-radius: 3px;
+    background: -webkit-gradient(linear, 0 0, 0 bottom, from(#ff0000), to(rgba(0, 0, 255, 0.5)));
+    margin-top: 8px;
+}
+
+.user-lv {
+    padding-left: 25px;
+    display: inline-block;
+    height: 17px;
+    line-height: 18px;
+    font-weight: bold;
+    color: #999;
+    font-size: 12px;
+    margin-top: 5px;
+    background: url(http://s2.music.126.net/style/web2/img/icon2.png?6fb096fac4982a85ab4ea5580ade14e2);
+    background-position: -130px -64px;
+}
+
+.user-lv-sup {
+    float: right;
+    width: 8px;
+    height: 17px;
+    background: url(http://s2.music.126.net/style/web2/img/icon2.png?6fb096fac4982a85ab4ea5580ade14e2);
+    background-position: -192px -64px;
+}
+
+.staus {
+    width: 250px;
+    height: 40px;
+    margin-top: 10px;
+}
+
+.staus-1 {
+    float: left;
+    margin: 0 10px;
+    display: block;
+}
+
+.staus-1 strong {
+    font-size: 20px;
+    display: block;
+}
+
+.staus-1:hover {
+    color: #0c73c2;
+}

@@ -1,0 +1,53 @@
+<!-- <div class="littleTop">
+    <div class="littleTop-sup">
+        <nz-breadcrumb [nzSeparator]="''">
+            <li>
+                <a [routerLink]="['recommon']">推荐</a>
+            </li>
+            <li>
+                <a [routerLink]="['board']">排行榜</a>
+            </li>
+            <li>
+                <a [routerLink]="['songlist']">歌单</a>
+            </li>
+            <li>
+                <a [routerLink]="['radiolist']">主播电台</a>
+            </li>
+            <li>
+                <a [routerLink]="['artilist']">歌手</a>
+            </li>
+            <li>
+                <a [routerLink]="['albumlist']">新碟上架</a>
+            </li>
+        </nz-breadcrumb>
+    </div>
+</div> -->
+
+
+
+<div class="littleTop">
+    <div class="littleTop-sup">
+        <ul class="items clear">
+            <li>
+                <a [routerLink]="['recommon']" routerLinkActive="active">推荐</a>
+            </li>
+            <li>
+                <a [routerLink]="['board']" routerLinkActive="active">排行榜</a>
+            </li>
+            <li>
+                <a [routerLink]="['songlist']" routerLinkActive="active">歌单</a>
+            </li>
+            <li>
+                <a [routerLink]="['radiolist']" routerLinkActive="active">主播电台</a>
+            </li>
+            <li>
+                <a [routerLink]="['artilist']" routerLinkActive="active">歌手</a>
+            </li>
+            <li>
+                <a [routerLink]="['albumlist']" routerLinkActive="active">新碟上架</a>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<router-outlet></router-outlet>

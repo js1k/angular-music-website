@@ -1,0 +1,42 @@
+.top-conter {
+    width: 686px; 
+}
+.topBar ,.rightPict {
+    background: url(https://s2.music.126.net/style/web2/img/index/index.png?a78ad776294be5ba6e55bfa73111a5a2) no-repeat 0 9999px;
+}
+.topBar {
+    height: 33px;
+    padding: 0 10px 0 34px;
+    
+    background-position: -225px -156px;
+    border-bottom: 2px solid #C10D0C;
+    position: relative;
+    
+}
+
+.rightPict {
+    background-position: 0 -240px;
+    display: block;
+    float: right;
+    width: 12px;
+    height: 12px;
+    margin-top: 10px;
+}
+
+.titlet{
+    font-size: 20px;
+    display: inline-block;
+}
+
+.rightt {
+    display: inline-block;
+    position: absolute;
+    right: 3px;
+    line-height: 33px;
+    
+}
+.rightt a {
+    color: rgba(0, 0, 0, 0.65);
+}
+
+

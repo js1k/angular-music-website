@@ -1,0 +1,114 @@
+
+<div class="co">
+<div class="bar">
+
+  <h3 class="floatx">评论</h3>
+  <span class="ccout floatx">
+    共{{commonColet?.total}}条评论
+  </span>
+</div>
+
+<div class="com">
+  <div class="clear">
+    <div class="left floatx">
+      <a href="" class="imga">
+        <img src="http://p3.music.126.net/VnZiScyynLG7atLIZ2YPkw==/18686200114669622.jpg?param=50y50" />
+      </a>
+    </div>
+
+    <div class="comright">
+      <textarea name="" rows="" cols="" placeholder="评论"></textarea>
+    </div>
+  </div>
+
+  <div class="ok">
+    <i class="imoj"></i>
+    <i class="linkto"></i>
+
+    <span class="submit">
+      评论
+    </span>
+
+  </div>
+</div>
+
+
+
+<h3 class="title">精彩评论</h3>
+
+<div *ngFor="let item of commonColet?.common ;let indeof =index">
+  
+  <div *ngIf=" indeof == commonColet?.spliceN ">
+      <br>
+      <h3  class="title ">最新评论(127794)</h3>
+
+  </div>
+  
+  <div class="desclist clear">
+
+    <div class="left floatx">
+      <a href="" class="imga">
+        <img [src]=' item[0]?.avatarUrl +"?param=50y50" ' />
+      </a>
+    </div>
+
+    <div class="right">
+      <div class="info">
+
+        <a href="">{{item[0]?.nickname}}：</a>
+        <span [innerHTML]=" item[0]?.content"></span>
+
+      </div>
+
+
+      <div class="info recominfo" *ngFor="let beRepliedItem of item.slice(1)">
+
+        <a href="">{{beRepliedItem?.nickname}}：</a>
+        <span [innerHTML]=" beRepliedItem?.content"></span>
+
+      </div>
+
+
+      <div class="dateinfo">
+        <span class="date">
+          {{item[0]?.time | date:'MM月dd日 HH:mm'}}
+        </span>
+
+        <a href="#" class="recom textr" (click)="showHiden(item[0]?.nickname,indeof)">
+          回复
+        </a>
+
+        <span class="step textr">
+          |
+        </span>
+
+        <a href="#" class="good textr">
+          <i class="icon"></i>
+          <span class="count">
+            ( {{item[0]?.likedCount}} )
+          </span>
+        </a>
+      </div>
+
+      <div *ngIf="commonShow == indeof " class="container">
+        <div class="text">
+          <textarea name="" rows="" cols="">回复{{commonTo}}:</textarea>
+        </div>
+        <div class="ok">
+          <i class="imoj"></i>
+          <i class="linkto"></i>
+
+          <span class="submit">
+            回复
+          </span>
+          <span class="canwrite">
+            150
+          </span>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+</div>

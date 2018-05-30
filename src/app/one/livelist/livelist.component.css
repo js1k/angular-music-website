@@ -1,0 +1,53 @@
+a {
+    text-decoration: none;
+    color: #333;
+    font-size: 12px;
+    
+}
+.livelist {
+    width: 210px;
+    margin-top: 30px; 
+    
+}
+.livebar h3 {
+    font-size: 12px;
+    color: #333;
+    height: 24px;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 20px; 
+}
+
+.liveContainer {
+    font-size: 12px;
+    color:#000;
+    height: 50px;
+   
+
+}
+
+.liveContainer:after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+.liveContainer .live ,.liveContainer .ltitle{
+    float: left;
+}
+.liveContainer .ltitle{
+    margin-left: 10px;
+}
+.ltitle  {
+    width: 160px;
+}
+.ltitle p {
+    margin-top: 4px;
+    color: #666;
+    overflow: hidden;
+    text-overflow:ellipsis;
+    white-space: nowrap;
+}
+
+.ltitle a {
+    color: #000000;
+}

@@ -1,0 +1,197 @@
+a {
+    color: #0c73c2;
+}
+
+.co {
+    margin-top: 40px;
+}
+
+.bar {
+    /* width: 640px; */
+    height: 33px;
+    border-bottom: 2px solid #c20c0c;
+}
+
+.bar .ccout {
+    margin: 9px 0 0 20px;
+    font-size: 12px;
+}
+
+.bar h3 {
+    font-size: 20px
+}
+
+.left {
+    width: 50px;
+    height: 50px;
+}
+
+.left .imga {
+    display: block;
+}
+
+.left .imga img {
+    vertical-align: middle;
+    width: 50px;
+}
+
+.right {
+    margin-left: 60px;
+    /* width: 580px; */
+    font-size: 12px;
+    color: #333;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.good {
+    color: #333;
+}
+
+.good .icon {
+    display: inline-block;
+    width: 15px;
+    height: 14px;
+    margin-bottom: 3px;
+    vertical-align: middle;
+    background: url(https://s2.music.126.net/style/web2/img/icon2.png?b83c1ec458832f127db50aa86e5d78fd) no-repeat 0 9999px;
+    background-position: -150px 0;
+}
+
+.textr {
+    float: right;
+}
+
+.dateinfo {
+    margin-top: 15px;
+    line-height: 16px;
+}
+
+.dateinfo a {
+    color: #333;
+}
+
+.dateinfo .date {
+    color: #999; 
+}
+
+.dateinfo .step {
+    margin: 0 8px;
+}
+
+.recominfo {
+    background-color: #F4F4F4;
+    padding: 8px 19px;
+    margin-top: 10px;
+}
+
+.com {
+    margin: 20px 0;
+    /* width: 640px; */
+}
+
+.com .ok {
+    margin-left: 60px;
+    font-size: 12px;
+}
+
+
+
+.desclist {
+    border-top: 1px dotted #ccc;
+    padding: 15px 0;
+    /* width: 640px; */
+}
+
+.ok {
+    padding-top: 10px;
+}
+
+.imoj,
+.linkto {
+    display: inline-block;
+    margin-right: 10px;
+    width: 18px;
+    height: 18px;
+    background: url(https://s2.music.126.net/style/web2/img/icon.png?4ffa1db80f548f77e8d31093025dcd1d);
+    cursor: pointer;
+}
+
+.imoj {
+    background-position: -40px -490px;
+}
+
+.linkto {
+    background-position: -60px -490px;
+}
+
+.submit,
+.canwrite {
+    display: block;
+    float: right;
+    height: 25px;
+    text-align: center;
+    line-height: 25px;
+    cursor: pointer;
+}
+
+.canwrite {
+    margin-right: 10px;
+}
+
+.submit {
+    width: 46px;
+    border-radius: 2px;
+    background-color: #3786D1;
+    color: white;
+}
+
+.container {
+
+    margin-top: 15px;
+    border: 1px solid #d9d9d9;
+    border-radius: 2px;
+    background-color: #F8F8F8;
+    font-size: 12px;
+    padding: 15px;
+}
+
+.comright {
+    margin-left: 60px;
+}
+
+
+textarea {
+    
+    width: 100%;
+    display: block;  
+    line-height: 19px;
+    padding: 5px 6px 6px;
+    border: 1px solid #cdcdcd;
+    border-radius: 2px;
+    font-size: 12px;
+    color: #333;
+    word-break: break-all;
+    resize: none;
+}
+
+.comright textarea {
+    
+    height: 50px;
+}
+
+.text textarea {
+    height: 31px;;
+}
+
+.title {
+    font-size: 12px;
+    font-weight: bold;
+    height: 25px;
+    border-bottom: 1px solid #cdcdcd; 
+}
+
+.info {
+    line-height: 20px;
+    color: rgb(51, 51, 51);
+}
+

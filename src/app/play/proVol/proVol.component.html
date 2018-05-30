@@ -1,0 +1,11 @@
+<div class="progress">
+  <div class="progressContainer"   (mousedown)="changeProLine($event)">
+   
+    <div class="progressLine" [ngStyle]='{"height":valueSrcProLine+"px"}'>
+    </div>
+
+    <div class="targetBtn" #btn id="targetBtn" (mousedown)="btnDown($event,btn)"  [ngStyle]='{"top":valueSrcProLine-9+"px"}'>
+
+    </div>
+  </div>
+</div>
